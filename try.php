@@ -1,3 +1,8 @@
+<form action="" method="get">
+    <input type="text" name="search" id="search">
+    <button type="submit">Search</button>
+</form>
+
 <?php
 if (isset($_GET['search'])) {
     $search = htmlspecialchars($_GET['search']); 
@@ -29,13 +34,9 @@ if (isset($_GET['search'])) {
         }
     }
 
+
     curl_close($curl);
 } else {
     echo "Please provide a search term.";
 }
 ?>
-<form action="" method="get">
-<input type="text" name="search" id="search">
-<button type="submit">Search</button>
-
-</form>

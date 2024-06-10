@@ -23,7 +23,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 }
 ?>
 
-<br><br>
+<br>
 
 <div class="container">
     <div class="row justify-content-center">
